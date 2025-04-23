@@ -215,6 +215,21 @@ def main():
     vel -= jnp.mean(mass * vel, 0) / jnp.mean(mass)
     acc = get_acc(pos, mass)
 
+    # plot initial velocities as arrows
+    fig = plt.figure(figsize=(4, 5), dpi=80)
+    ax = fig.add_subplot(111)
+    ax.quiver(pos[:, 0], pos[:, 1], vel[:, 0], vel[:, 1])
+    plt.scatter(pos[:, 0], pos[:, 1], s=10, color="blue")
+    ax.set(xlim=(-2, 2), ylim=(-2, 2))
+    ax.set_aspect("equal", "box")
+    ax.set_xticks([-2, -1, 0, 1, 2])
+    ax.set_yticks([-2, -1, 0, 1, 2])
+    ax.set_xlabel("x")
+    ax.set_ylabel("y")
+    ax.set_title("Initial velocities")
+    plt.savefig("heart-ics.png", dpi=240)
+    plt.pause(1.0)
+
     # calculate initial energy of system
     KE, PE = get_energy(pos, vel, mass)
 
