@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from jaxopt import ScipyMinimize
 
 """
-Create Your Own Differentiable N-body Simulation (With JAX)
+Create Your Own Differentiable N-body Simulation (With Python/JAX)
 Philip Mocz (2025) @pmocz
 
 Simulate orbits of stars interacting due to gravity.

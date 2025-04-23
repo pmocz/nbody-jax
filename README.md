@@ -1,11 +1,11 @@
 # nbody-jax
 Differentiable N-body code (JAX)
 
-## Create Your Own Differentiable N-body Simulation (With JAX)
+## Create Your Own Differentiable N-body Simulation (With Python/JAX)
 
 ### Philip Mocz (2025)
 
-### [📝 Read the Algorithm Write-up on Medium](https://medium.com/swlh/TODO)
+### [📝 Read the Algorithm Write-up on Medium](https://medium.com/swlh/XXX)
 
 Simulate orbits of stars interacting due to gravity
 
