@@ -134,7 +134,7 @@ def do_simulation(pos, vel, mass, t):
     # update time
     t += Nt * dt
 
-    return pos, vel, acc, mass, t
+    return pos, vel, mass, t
 
 
 @jax.jit
@@ -159,7 +159,7 @@ def loss_function(vel, pos, mass, target):
     vel -= jnp.mean(mass * vel, 0) / jnp.mean(mass)
 
     # Carry out simulation
-    pos, _, _, _, _ = do_simulation(pos, vel, mass, t)
+    pos, _, _, _ = do_simulation(pos, vel, mass, t)
 
     # Bin the resulting 2D positions and estimate the density
     pos2d = pos[:, 0:2].T
