@@ -21,6 +21,6 @@ python nbody.py
 
 ![Simulation](./heart-nbody.png)
 
-The inititial condition that led to the heart-shape:
+The initial condition that led to the heart-shape:
 
 ![Initial Conditions](./heart-ics.png)
